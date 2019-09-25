@@ -1,0 +1,24 @@
+# Ignore everything
+*
+
+#
+# Don't ignore some folders
+#
+!src
+!src/**
+!tests
+
+#
+# Don't ignore some extentions
+#
+!*.php
+#
+# Don't ignore some files
+#
+!composer.json
+!.gitignore
+!phpunit.xml.dist
+!.coveralls.yml
+!.travis.yml
+!README.md
+!LICENSE

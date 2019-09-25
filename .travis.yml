@@ -1,0 +1,13 @@
+language: php
+php:
+  - '7.0.10'
+  - '7.1'
+
+before_script:
+  - composer install
+
+script:
+  - ./vendor/bin/phpunit -c ./phpunit.xml.dist
+
+after_success:
+  - travis_retry php ./vendor/bin/php-coveralls
