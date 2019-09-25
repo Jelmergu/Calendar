@@ -10,9 +10,7 @@ class CalendarEventTest extends TestCase
 
     public function testSetStartDate()
     {
-        $this->assertTrue(
-            $this->event->setStartDate(new \DateTime("2019-01-02 00:00:00"))
-        );
+        $this->event->setStartDate(new \DateTime("2019-01-02 00:00:00"));
         $this->assertEquals(
             "2019-01-02 00:00:00",
             $this->event->getStartDate()
@@ -190,7 +188,7 @@ class AbstractCalendarEventMock extends AbstractCalendarEvent
      */
     public function getStartDate()
     {
-        return $this->startDate->format("Y-m-d H:i:s");;
+        return $this->startDate->format("Y-m-d H:i:s");
     }
 
     /**
